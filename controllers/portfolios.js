@@ -1,4 +1,6 @@
 
+const config = require('../config')
+
 exports.getPortfolios = (req, res) => {
-  return res.json({data: [1,2,3,4]});
+  return res.json({data: config.ENV_MESSAGE});
 }
